@@ -1,5 +1,7 @@
 # Caixa Eletrônico
 
+Sistema de Caixa Eletrônico, utilizando Docker, Kafka, Spring, Angular
+
 ## Pré requisitos
 
 - Maven 3+

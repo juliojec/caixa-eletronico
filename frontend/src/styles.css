@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+.text-center{
+  text-align: center;
+}
+.touch {
+  cursor: pointer;
+}
+.form-full-width {
+  width: 100%;
+}
+
+.form-dual{
+  width: 50%;
+}
+
+.modal-footer button  {
+  margin-right: 8px;
+}
+

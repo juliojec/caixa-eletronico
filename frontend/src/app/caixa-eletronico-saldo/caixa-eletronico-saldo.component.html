@@ -1,0 +1,22 @@
+<div class="modal-header">
+  <h5 class="modal-title pull-left">Caixa Eletrônico - Consulta de Saldo</h5>
+</div>
+<div class="modal-body">
+  <mat-dialog-content [formGroup]="form">
+    <mat-form-field>
+      <input matInput placeholder="Cpf" name="cpf" formControlName="cpf">
+    </mat-form-field>
+    <button mat-icon-button type="submit" color="accent" aria-label="Consultar" (click)="consultaSaldo()">
+      <mat-icon>search</mat-icon>
+    </button>
+  </mat-dialog-content>
+  <div *ngIf="beneficiario">
+    Seu saldo de aposentadoria é de: R$ {{beneficiario.saldoAposentadoria}} <br>
+    Você irá receber R$ {{beneficiario.receber}} por mês com seu saldo atual
+  </div>
+</div>
+<div class="modal-footer">
+  <div mat-dialog-actions>
+    <button mat-flat-button color="accent" (click)="fecharModal()">Sair</button>
+  </div>
+</div>

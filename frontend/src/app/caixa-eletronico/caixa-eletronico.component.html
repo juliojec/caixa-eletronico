@@ -1,0 +1,16 @@
+<div class="modal-header">
+  <h5 class="modal-title pull-left">Caixa Eletrônico</h5>
+</div>
+<div class="modal-body">
+  <mat-dialog-content [formGroup]="form" >
+    <div mat-dialog-actions class="text-center">
+      <button mat-flat-button color="warn" (click)="aporte()">Aporte</button>
+      <button mat-flat-button color="primary" (click)="saldo()">Saldo Aposentadoria</button>
+    </div>
+  </mat-dialog-content>
+</div>
+<div class="modal-footer">
+  <div mat-dialog-actions>
+    <button mat-flat-button color="accent" (click)="fecharModal()">Fechar</button>
+  </div>
+</div>

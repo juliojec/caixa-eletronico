@@ -1,0 +1,19 @@
+<div class="modal-header">
+  <h5 class="modal-title pull-left">Caixa Eletrônico</h5>
+</div>
+<div class="modal-body">
+  <mat-dialog-content [formGroup]="form">
+    <mat-form-field class="form-dual">
+      <input matInput placeholder="Cpf" name="cpf" formControlName="cpf">
+    </mat-form-field>
+    <mat-form-field  class="form-dual">
+      <input matInput placeholder="Aporte" name="aporte" formControlName="aporte"  type="number" step="0.01" min="0.01">
+    </mat-form-field>
+  </mat-dialog-content>
+</div>
+<div class="modal-footer">
+  <div mat-dialog-actions>
+    <button mat-flat-button color="accent" (click)="fecharModal()">Cancelar</button>
+    <button mat-flat-button color="primary" (click)="salvar()" [disabled]="form.invalid">Realizar Aporte</button>
+  </div>
+</div>

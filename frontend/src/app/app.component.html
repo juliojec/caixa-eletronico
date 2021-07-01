@@ -1,0 +1,19 @@
+<section>
+  <img src="assets/img/logo-brasilprev.svg" class="logo-flutuante">
+  <mat-grid-list cols="4">
+    <mat-grid-tile [colspan]="2" [rowspan]="2" [style.background]="'lightpink'">
+      <mat-progress-spinner class="example-margin" [color]="'accent'" [mode]="'indeterminate'" *ngIf="loading"></mat-progress-spinner>
+      <div *ngIf="!loading" (click)="cadastrarBeneficiario()" class="text-center touch">
+        <h3 *ngIf="!loading">Cadastro</h3>
+        <img src="assets/img/cadastro.png" width="160">
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="2" [style.background]="'lightblue'">
+      <mat-progress-spinner class="example-margin" [color]="'primary'" [mode]="'indeterminate'" *ngIf="loading"></mat-progress-spinner>
+      <div *ngIf="!loading" (click)="caixaEletronico()" class="text-center touch">
+        <h3>Caixa Eletrônico</h3>
+        <img src="assets/img/caixa-eletronico.png" width="160">
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</section>

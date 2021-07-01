@@ -1,0 +1,9 @@
+.logo-flutuante{
+  margin: auto;
+  position: absolute;
+  top: 5%;
+  left: 0;
+  right: 0;
+  width: 200px;
+  z-index: 1000;
+}
